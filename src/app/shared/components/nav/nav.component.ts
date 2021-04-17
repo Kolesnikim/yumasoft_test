@@ -18,6 +18,10 @@ export class NavComponent implements OnInit {
     {
       name: 'Edit data',
       link: '/edit-data'
+    },
+    {
+      name: 'Download',
+      link: '/download'
     }
   ];
 

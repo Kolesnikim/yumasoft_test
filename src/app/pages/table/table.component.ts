@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {TableDataService} from '../../core/table-data.service';
-import {Observable} from 'rxjs';
-import {IEmployee} from '../../shared/interfaces/employees';
+import { TableDataService } from '../../core/table-data.service';
+import { Observable } from 'rxjs';
+import { IEmployee } from '../../shared/interfaces/employees';
 
 @Component({
   selector: 'app-table',

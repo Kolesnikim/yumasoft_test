@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {TableDataService} from './table-data.service';
+import { TableDataService } from './table-data.service';
 
 
 @NgModule({

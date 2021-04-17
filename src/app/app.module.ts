@@ -8,20 +8,25 @@ import {CoreModule} from './core/core.module';
 import { AddDataComponent } from './pages/add-data/add-data.component';
 import { TableComponent } from './pages/table/table.component';
 import { EditDataComponent } from './pages/edit-data/edit-data.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { DownloadComponent } from './pages/download/download.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddDataComponent,
     TableComponent,
-    EditDataComponent
+    EditDataComponent,
+    DownloadComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    SharedModule,
-    CoreModule,
-  ],
+    imports: [
+      BrowserModule,
+      AppRoutingModule,
+      SharedModule,
+      CoreModule,
+      ReactiveFormsModule,
+      FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,1 +1,48 @@
-<p>add-data works!</p>
+<div class="row">
+  <div class="col-lg-12 text-center">
+    <h1 class="mt-5 mb-lg-5">
+      Add some data to a table
+    </h1>
+  </div>
+</div>
+<div class="row">
+  <form class="col-lg-12">
+    <div
+      class="form-group"
+      [formGroup]="stringFormGroup"
+      (ngSubmit)="sendString($event)"
+    >
+      <label for="FormControlTextarea1">Please, add a string in JSON format</label>
+      <textarea
+        class="form-control"
+        id="FormControlTextarea1"
+        rows="4"
+        cols="8"
+        formControlName="importedString"
+      ></textarea>
+
+      <label for="exampleFormControlFile1" class="mt-3">Add file in CSV or JSON format</label>
+      <input
+        type="file"
+        class="form-control-file"
+        formControlName="importedFile"
+        id="exampleFormControlFile1"
+        (change)="fileChanged($event)"
+      >
+
+      <div
+        *ngIf="stringFormGroup.controls['importedString'].invalid && stringFormGroup.controls['importedString'].touched"
+        class="invalid-feedback"
+      >
+        Name is required.
+      </div>
+      <button
+        type="submit"
+        class="btn btn-primary mb-3 mt-3"
+        (click)="sendString($event)"
+      >Continue</button>
+
+    </div>
+  </form>
+</div>
+

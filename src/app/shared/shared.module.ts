@@ -9,10 +9,10 @@ import { SortDirective } from './directives/sort.directive';
     NavComponent,
     SortDirective
   ],
-  exports: [
-    NavComponent,
-    SortDirective
-  ],
+    exports: [
+        NavComponent,
+        SortDirective
+    ],
   imports: [
     CommonModule,
     RouterModule,
